@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { useDispatch } from "react-redux";
 import { registerUser } from "../../../_actions/user_action";
+import { withRouter } from "react-router-dom";
 
 const RegisterPageBlock = styled.main`
   display: flex;
@@ -90,4 +91,4 @@ function RegisterPage(props) {
   );
 }
 
-export default RegisterPage;
+export default withRouter(RegisterPage);
