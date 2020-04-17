@@ -28,8 +28,8 @@ function LoginPage(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(loginUser(form)).then((state) => {
-      if (state.loginSuccess) {
+    dispatch(loginUser(form)).then((response) => {
+      if (response.payload.success) {
         props.history.push("/");
       } else {
         alert("ERROR");
