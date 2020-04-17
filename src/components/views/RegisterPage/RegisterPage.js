@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { useDispatch } from "react-redux";
-import { loginUser, registerUser } from "../../../_actions/user_action";
+import { registerUser } from "../../../_actions/user_action";
 
 const RegisterPageBlock = styled.main`
   display: flex;
