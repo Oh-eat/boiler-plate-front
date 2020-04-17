@@ -14,9 +14,10 @@ import rootReducer from "./_reducers";
 const store = createStore(
   rootReducer,
   applyMiddleware(
+    // window.__REDUX_DEVTOOLS_EXTENSION__ &&
+    //   window.__REDUX_DEVTOOLS_EXTENSION__(),
     promiseMiddleware,
-    ReduxThunk,
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    ReduxThunk
   )
 );
 
